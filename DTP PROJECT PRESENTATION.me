@@ -1,0 +1,157 @@
+                                    DTP HACKATHON PROJECT PRESENTATION.
+
+
+            Title:  Using Machine Learning to Predict Hospital Readmissions: A Practical Solution for Rwanda’s Healthcare System.
+ 
+
+            Hackathon Project | July 2025.
+
+
+      Problem Statement.
+
+Hospital readmissions are a growing challenge for Rwanda’s healthcare system. They increase costs, strain hospital capacity, and often indicate poor patient outcomes. There is currently no standardized tool to identify patients at high risk of readmission upon discharge.
+
+      Objectives.
+
+-Predict the likelihood of hospital readmission using machine learning.
+-Identify key factors (age, diagnoses, test results, medication) influencing readmission.
+-Provide a decision-support tool aligned with Rwanda’s Health Management Information System for frontline healthcare workers.
+
+
+     Methodology.
+
+-Data Preprocessing: Cleaned the dataset (handled missing values, renamed columns, removed duplicates).
+
+-Exploratory Data Analysis: Identified trends and risk factors such as age, diagnosis, A1C test results, and number of prior inpatient visits.
+
+
+    Modeling.
+
+-Logistic Regression
+
+-Support Vector Machine (SVM)
+
+-Random Forest
+
+XGBoost
+
+
+
+
+    Model Evaluation.
+
+-Accuracy, Recall, Precision, F1 Score, ROC-AUC
+
+-Random Forest gave the best performance, especially in recall and it is also highly accuracy (important for catching more high-risk patients).
+
+
+
+
+
+    Dataset Overview.
+
+Sourced from Kaggle; structured to reflect Rwanda’s hospital data setup.
+
+Key Features: age, diagnosis codes, length of stay, A1C test, medication changes, glucose test, readmission status.
+
+-Target Variable: readmitted (0 = No, 1 = Yes)
+
+
+
+
+    Exploratory Data Analysis (Insights).
+
+Age: Patients aged 60–80+ have the highest readmission rates, needing targeted follow-up.
+
+Diagnoses: Circulatory and chronic diseases like diabetes strongly increase readmission risk.
+
+Medical Specialty: Missing specialty data reveals gaps in health records that affect care quality.
+
+Tests: Few patients get A1C or glucose tests; high A1C levels signal higher readmission risk.
+
+Medication: Most are on diabetes meds, but changes in medication don’t strongly affect readmission.
+
+Prior Visits: Frequent past hospital stays indicate higher chances of readmission.
+
+Length of Stay: Longer hospital stays link to increased readmission risk.
+
+Medication Count: More medications reflect complex cases with higher readmission chances.
+
+
+
+    Model Results (Random Forest).
+
+
+Accuracy: ~85%
+
+Recall: Strong (captured most of the true positives).
+
+AUC Score: Good overall classification performance.
+
+Model effectively integrates weak signals to identify high-risk patients for readmission.
+
+
+
+    Tools & Technologies.
+
+-Python (Jupyter Notebook).
+
+-Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn....
+
+-GitHub for version control and sharing.
+
+-Visual Studio Code for code editing.
+
+
+
+    Key Findings.
+
+Most readmitted patients are elderly, have chronic or circulatory conditions, and often lack complete test records. Missing medical specialty data highlights   Health Management Information System challenges. A high A1C level is a risk indicator. Patients on diabetes meds are more likely to be readmitted, suggesting disease severity.
+
+
+   Relevance to Rwanda.
+
+Although the dataset is not local, the structure fits Rwanda’s Health Management Information System. The same types of patient data—diagnosis, medication, tests, and age are collected here. The solution is adaptable and can help frontline healthcare workers prioritize follow-up care using data they already record.
+
+
+
+     Impact for Rwanda’s Healthcare.
+
+Helps nurses and Community health workers identify patients needing follow-up care.
+
+Supports early intervention and chronic disease management.
+
+Reduces hospital congestion and healthcare costs.
+
+Builds on Rwanda’s Health Management Information System data structure, allowing for integration and scale.
+
+
+
+    Suggestions.
+
+Improve data quality, especially diagnosis and test recording.
+
+Train frontline workers to use predictive tools.
+
+Strengthen chronic disease programs (especially diabetes).
+
+Update models regularly using new hospital data.
+
+Develop user-friendly interfaces (e.g., dashboards, mobile tools).
+
+
+     Conclusion.
+
+This project proves that machine learning can accurately predict hospital readmission using health data aligned with Rwanda’s system. By applying tools like Random Forest, healthcare workers can better allocate resources, prioritize patient care, and reduce the burden of preventable readmissions.
+
+This solution is ready to be tested in hospitals and health centers in Rwanda. Even though the data used is not from Rwanda, the model is designed to work with the kind of information that Rwanda's health system Health Management Information System already collects. With a few adjustments, it can help doctors and nurses find patients who are more likely to be readmitted and make sure they get better follow-up care.
+
+
+
+
+By:  MUHIRWA ERNESTE.
+
+
+
+
+
